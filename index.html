@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/bootstrap-icon/1.11.1/font/bootstrap-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Concert+One&family=Cookie&family=Courgette&family=Dongle:wght@400;700&family=Londrina+Solid:wght@400;900&family=Margarine&family=Preahvihear&family=Righteous&family=Rum+Raisin&family=Yellowtail&display=swap"> 
+  <link rel="stylesheet" href="../assets/bootstrap/5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="../assets/mdb-ui-kit/7.1.0/css/mdb.min.css" />
+  <link rel="stylesheet" href="../assets/mdb-pro/css/md-form.css">
+  <link rel="stylesheet" href="../assets/css/index.min.css" />
+  <title>Yhan PhysioLink</title>
+</head>
+<body>
+  <header>
+    <div class="trans-before-scroll" id="main-trans"></div>
+    <nav id="main-navbar" class="navbar navbar-expand-lg fixed-top navbar-before-scroll shadow-0">
+      <div class="container-fluid">
+        <button class="navbar-brand" onclick="scrollToSection('home')">
+          <img class="brand-logo" src="../assets/img/yhan-brand-logo-4.png" width="46" alt="Brand Logo">
+          <div class="brand-name">
+            <span class="tag-one">Yhan</span>&nbsp;<span class="tag-two">Physiolink</span>
+          </div>
+        </button>
+        <div class="button-group-one">
+          <button data-mdb-ripple-init type="button" class="ms-auto button button-1 d-none" data-mdb-modal-init data-mdb-target="#exampleModal">
+            Register
+          </button>
+          <button data-mdb-collapse-init class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <a class="navbar-brand">
+              <img class="brand-logo" src="../assets/img/yhan-brand-logo-4.png" alt="Brand Logo">
+              <div class="brand-name">
+                <span class="tag-one">Yhan</span>&nbsp;<span class="tag-two">Physiolink</span>
+              </div>
+            </a>
+            <button type="button" class="button-close" data-bs-dismiss="offcanvas" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <button class="nav-link active" onclick="scrollToSection('home')">
+                  <span class="link-name">Home</span>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" onclick="scrollToSection('about')">
+                  <span class="link-name">About us</span>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" onclick="scrollToSection('profile')">
+                  <span class="link-name">Profile</span>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" onclick="scrollToSection('service')">
+                  <span class="link-name">Services</span>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" onclick="scrollToSection('contact')">
+                  <span class="link-name">Contacts</span>
+                </button>
+              </li>
+            </ul>
+            <div class="offcanvas-body-button d-flex justify-content-center">
+              <button data-mdb-ripple-init type="button" class="button button-2" data-mdb-modal-init data-mdb-target="#exampleModal">
+                Register Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="modal top fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="static" data-mdb-keyboard="true">
+      <div class="modal-dialog modal-md ">
+        <div class="modal-content">
+          <div class="modal-body pt-4 pb-4 p-3 d-flex justify-content-between align-items-center">
+            <h5 class="modal-title " id="exampleModalLabel"><i class="fa-solid fa-bell"></i>&nbsp;&nbsp;Comming Soon</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="home" id="home">
+    <div class="container">
+      <div class="row content">
+        <div class="col-lg-7 column-left">
+          <div class="row">
+            <div class="col-lg-11 p-0">
+              <div class="section-title pb-3 pt-3" data-aos="zoom-in">
+                <h1>Accompany your Physical Health Journey at Yhan PhysioLink</h1>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <div class="section-description pb-2" data-aos="zoom-in">
+                <p>
+                  Enjoy your wellness journey with pleasure with Yhan PhysioLink. 
+                  Find health tips, customized recovery programs, and warm support from us. 
+                  Let's start your healthy day here!
+                </p>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="section-button pb-2" data-aos="zoom-in">
+                <button type="button" class="button btn-rounded" data-mdb-ripple-init onclick="scrollToSection('about')">View More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Column Right -->
+        <div class="col-lg-5 column-right" data-aos="zoom-in">
+          <div class="section-image">
+            <img class="image-home" src="../assets/img/Home.png" width="100%" alt="Home Image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row content">
+        <div class="col-lg-6 column-left">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-title pb-3" data-aos="zoom-in">
+                <h1>About us</h1>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="section-description pb-2" data-aos="zoom-in">
+                <p>
+                  We at Yhan PhysioLink believe that physical health is a valuable investment for a meaningful life. 
+                  With a mission to provide the best resources, guidance and support, we are determined to help every individual achieve optimal physical well-being. 
+                  Together, let's keep our bodies healthy and live life with energy!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 column-right" data-aos="zoom-in">
+          <div class="section-image">
+            <img class="image-about" src="../assets/img/About.png" width="100%" alt="About Image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="profile" id="profile">
+    <div class="container">
+      <div class="content">
+        <div class="section-title pb-3" data-aos="zoom-in">
+          <h1>PROFILE</h1>
+        </div>
+        <div class="section-description pb-2" data-aos="zoom-in">
+          <p>We are here to provide the best in health care and recovery. Our response is attentive and dedicated to an effective and satisfying treatment experience.</p>
+        </div>
+        <div class="section-body mt-2">
+          <div class="row d-flex justify-content-center">
+            <div class="first-column col-lg-3 col-md-5" data-aos="zoom-in">
+              <div class="view overlay z-depth-1 z-depth-2">
+                <img src="../assets/img/Profile.JPG" class="img-fluid" alt />
+              </div>
+            </div>
+            <div class="second-column col-lg-6 col-md-7 text-left pt-4 pt-lg-0 pt-md-0">
+              <h4 class="name mb-3" data-aos="zoom-in">Nurul Dhian Al, S.Ftr <i class="bi bi-patch-check-fill"></i></h4>
+              <p class="grey-text desc" data-aos="zoom-in">
+                As the owner and therapist of Yhan PhysioLink, I bring deep insight and extensive experience to the world of physical therapy. 
+                My commitment is to provide the best possible care for each individual,
+                combining in-depth knowledge and a caring approach to support optimal recovery.
+              </p>
+              <ul class="icon pt-3">
+                <li data-aos="zoom-in" data-aos-duration="600"><a href="" class="btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li data-aos="zoom-in" data-aos-duration="900"><a href="" class="btn" title="Telegram"><i class="fa-brands fa-telegram"></i></a></li>
+                <li data-aos="zoom-in" data-aos-duration="1100"><a href="" class="btn" title="Email"><i class="fa-regular fa-envelope"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="service" id="service">
+    <div class="container">
+      <div class="content">
+        <div class="section-title pb-3" data-aos="zoom-in">
+          <h1>SERVICE</h1>
+        </div>
+        <div class="section-description pb-2" data-aos="zoom-in">
+          <p>We provide a wide selection of high-quality services that are specifically tailored to meet your health and recovery needs.</p>
+        </div>
+        <div class="section-body mt-2">
+          <div class="row g-4 d-flex justify-content-center">
+            <div class="col-md-6" data-aos="fade-right">
+              <div class="card h-100">
+                <div class="card-body">
+                  <i class="card-icon fa-solid fa-suitcase-medical"></i>
+                  <h5 class="card-title">Custom Recovery Program</h5>
+                  <p class="card-text">
+                    Develop a customized recovery program tailored to each individual's condition and goals. 
+                    Our commitment is to provide the best possible care to achieve optimal results.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+              <div class="card h-100">
+                <div class="card-body">
+                  <i class="card-icon fa-solid fa-book-open-reader"></i>
+                  <h5 class="card-title">Health Education</h5>
+                  <p class="card-text">
+                    Providing education is important for patients to understand their condition, 
+                    take care of themselves, and prevent injuries - good health starts with the right knowledge!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-right">
+              <div class="card h-100">
+                <div class="card-body">
+                  <i class="card-icon fa-solid fa-comments"></i>
+                  <h5 class="card-title">Online Consultation</h5>
+                  <p class="card-text">
+                    Access our physiotherapists' guidance through online consultations, 
+                    making it easier for patients without having to come to the clinic.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+              <div class="card h-100">
+                <div class="card-body">
+                  <i class="card-icon fa-solid fa-handshake-angle"></i>
+                  <h5 class="card-title">Directed Manual Therapy</h5>
+                  <p class="card-text">
+                    Experienced therapists provide targeted manual therapy to address muscle tension, 
+                    reduce pain and improve overall flexibility.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="content">
+        <div class="section-title pb-3" data-aos="zoom-in">
+          <h1>Contact</h1>
+        </div>
+        <div class="section-body mt-2">
+          <div class="row g-4">
+            <div class="col-md-7" data-aos="fade-right">
+              <div class="card card-form">
+                <div class="card-body">
+                  <h4 class="card-title"><i class="fa-solid fa-pen-to-square fa-flip-horizontal"></i> Write to Us:</h4>
+                  <form class="needs-validation" novalidate>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="md-form" data-mdb-input-init>
+                          <input type="text" class="form-control" id="validationCustom01" required />
+                          <label for="validationCustom01" class="form-label">Your Name</label>
+                          <div class="invalid-feedback">Please provide a your name.</div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="md-form" data-mdb-input-init>
+                          <input type="email" class="form-control" id="validationCustom02" required/>
+                          <label for="validationCustom02" class="form-label">Your Email</label>
+                          <div class="invalid-feedback">Please provide a your Email.</div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="md-form" data-mdb-input-init>
+                          <input type="tel" class="form-control" id="validationCustom03" required/>
+                          <label for="validationCustom03" class="form-label">Your Phone</label>
+                          <div class="invalid-feedback">Please provide a your phone.</div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="md-form" data-mdb-input-init>
+                          <input type="text" class="form-control" id="validationCustom04" required/>
+                          <label for="validationCustom04" class="form-label">Subject</label>
+                          <div class="invalid-feedback">Please provide a subject.</div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="md-form" data-mdb-input-init>
+                          <textarea class="md-textarea form-control" id="validationTextarea" rows="2" required></textarea>
+                          <label for="validationTextarea" class="form-label">Message</label>
+                          <div class="invalid-feedback">Please enter a message in the textarea.</div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 button-form">
+                        <button class="button rounded-pill" type="submit" data-mdb-ripple-init>
+                          <span>Send Message</span> <span><i class="fa-regular fa-paper-plane"></i></span></button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5" data-aos="fade-left">
+              <div class="card card-information h-100">
+                <div class="card-body">
+                  <h4 class="card-title">Contact Information</h4>
+                  <div class="card-icon">
+                    <div class="item-icon">
+                      <span class="icon"><i class="fa-solid fa-house-chimney"></i></span>
+                      <span class="text text-1">Sleman Regency, Yogyakarta</span>
+                    </div>
+                    <div class="item-icon">
+                      <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                      <span class="text text-3">nuruldhian77@gmail.com</span>
+                    </div>
+                    <div class="item-icon">
+                      <span class="icon"><i class="fa-brands fa-instagram"></i></span>
+                      <span class="text text-3">_dhiiaann</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer text-center text-white">
+    <div class="text-center p-3 copyright">
+      © 2024 Copyright:
+      <button onclick="scrollToSection('home')">YhanPhyslink.com</button>
+    </div>
+  </footer>
+  <script src="../assets/myAddons/js/form-validation.js"></script>
+  <script src="../assets/myAddons/js/navbar-scroll-transition.js"></script>
+  <script src="../assets/js/index.js"></script>
+  <script type="text/javascript" src="../assets/bootstrap/5.3.2/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../assets/mdb-ui-kit/7.1.0/js/mdb.umd.min.js"></script> 
+  <script type="text/javascript" src="../assets/mdb-pro/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../assets/mdb-pro/js/popper.min.js"></script>
+  <script type="text/javascript" src="../assets/mdb-pro/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../assets/mdb-pro/js/mdb.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
